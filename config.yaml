@@ -1,0 +1,16 @@
+robot:
+  tick_hz: 10
+  initial_battery: 100
+  default_vx: 0.1
+
+  smtp:
+    url: "smtp://smtp.example.com:587"
+    user: "honeypot@example.com"
+    from: "honeypot@example.com"
+    to:
+      - "admin@example.com"
+    tls_required: true
+
+honeypot:
+  watch_dir: "/var/honeypot/files"
+  max_events_per_minute: 60
